@@ -17,6 +17,7 @@
   "types": "./dist/types/main.d.ts",
   "scripts": {
     "dev": "vite -c ./dev/vite.config.ts",
+    "build-dev": "vite build -c ./dev/vite.config.ts",
     "build": "vite build && vue-tsc src/main.ts --emitDeclarationOnly --declaration --declarationDir dist/types"
   },
   "dependencies": {
