@@ -1,0 +1,37 @@
+{
+  "name": "wordcloudtunnel",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/wordcloudtunnel.umd.cjs",
+  "module": "./dist/wordcloudtunnel.js",
+  "exports": {
+    ".": {
+      "import": "./dist/wordcloudtunnel.js",
+      "require": "./dist/wordcloudtunnel.umd.cjs"
+    }
+  },
+  "./style.css": "./dist/wordcloudtunnel.css",
+  "types": "./dist/types/main.d.ts",
+  "scripts": {
+    "dev": "vite -c ./dev/vite.config.ts",
+    "build": "vite build && vue-tsc src/main.ts --emitDeclarationOnly --declaration --declarationDir dist/types"
+  },
+  "dependencies": {
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.9.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vue/tsconfig": "^0.5.1",
+    "npm-run-all2": "^7.0.1",
+    "prettier": "^3.3.3",
+    "sass": "^1.80.6",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.10",
+    "vue-tsc": "^2.1.10"
+  }
+}
