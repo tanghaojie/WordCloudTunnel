@@ -1,5 +1,5 @@
 {
-  "name": "wordcloudtunnel",
+  "name": "@jtis/wordcloudtunnel",
   "version": "0.0.1",
   "type": "module",
   "files": [
@@ -13,12 +13,25 @@
       "require": "./dist/wordcloudtunnel.umd.cjs"
     }
   },
-  "./style.css": "./dist/wordcloudtunnel.css",
+  "./style.css": "./dist/style.css",
   "types": "./dist/types/main.d.ts",
+  "keywords": [
+    "wordcloud",
+    "vue",
+    "tunnel",
+    "wordcloudtunnel",
+    "ts",
+    "typescript",
+    "web"
+  ],
+  "license": "MIT",
+  "author": "Jackie Tang",
+  "repository": "https://github.com/tanghaojie/WordCloudTunnel",
   "scripts": {
     "dev": "vite -c ./dev/vite.config.ts",
     "build-dev": "vite build -c ./dev/vite.config.ts",
-    "build": "vite build && vue-tsc src/main.ts --emitDeclarationOnly --declaration --declarationDir dist/types"
+    "build": "vite build && vue-tsc src/main.ts --emitDeclarationOnly --declaration --declarationDir dist/types",
+    "publishToNpm": "npm publish"
   },
   "dependencies": {
     "vue": "^3.5.12"
